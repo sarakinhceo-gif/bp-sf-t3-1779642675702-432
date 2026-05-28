@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보 | 강남 셔츠룸 & 마포 서버 웜업</title>
+    <meta name="description" content="마포 No.1 서버 웜업 & 강남 셔츠룸 정보. 전화 010-6279-0862. 규칙을 깨는 경험의 정체. 하드코어한 세부사항을 공개합니다.">
+    <meta name="keywords" content="강남 셔츠룸, 마포 서버 웜업, 서버 웜업 정보, 셔츠룸, 강남, 마포, 퍼포먼스, 웜업, brutalism, neon-void">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://sf-t3-1779642675702-432.pages.dev/info">
+    <!-- Open Graph -->
+    <meta property="og:title" content="강남 셔츠룸 | 마포 서버 웜업 – 정보">
+    <meta property="og:description" content="네온 보이드. 규칙을 부수는 서버 웜업. 강남 셔츠룸 정보 페이지. 지금 도발하세요.">
+    <style>
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        a {
+            color: #ff0055;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        a:hover {
+            color: #00ffcc;
+        }
+        /* TYPOGRAPHY – oversized, raw */
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            color: #ff0055;
+            text-shadow: 4px 4px 0 #00ffcc, -2px -2px 0 #5500ff;
+            padding: 0 1rem;
+            word-break: break-word;
+        }
+        h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            border-left: 8px solid #ff0055;
+            padding-left: 1rem;
+            margin: 2rem 0 1rem;
+            color: #f0f0f0;
+        }
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 1.5rem 0 0.5rem;
+            color: #ffcc00;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+            padding: 0 1rem;
+            color: #c0c0c0;
+        }
+        .accent-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #00ffcc;
+            background: #1a1a1a;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            border: 2px dashed #ff0055;
+        }
+        /* LAYOUT – full bleed, asymmetric, high gaps */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem 0.8rem;
+            }
+            h1 {
+                font-size: 2rem;
+                text-shadow: 2px 2px 0 #00ffcc, -1px -1px 0 #5500ff;
+            }
+        }
+        /* HEADER */
+        header {
+            background: #111;
+            border-bottom: 4px solid #ff0055;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo a {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #00ffcc;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .logo a:hover {
+            color: #ff0055;
+        }
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        nav a:hover {
+            border-color: #ff0055;
+            background: #1a1a1a;
+        }
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .hamburger span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background: #ff0055;
+            margin: 6px 0;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            nav {
+                display: none;
+                width: 100%;
+                text-align: center;
+                background: #111;
+                padding: 1rem 0;
+                border-top: 2px solid #ff0055;
+            }
+            nav.active {
+                display: block;
+            }
+            nav a {
+                display: block;
+                padding: 0.8rem 0;
+                border: none;
+            }
+        }
+        /* INFO SECTION */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .info-card {
+            background: #151515;
+            border: 3px solid #ff0055;
+            padding: 2rem;
+            box-shadow: 8px 8px 0 #00ffcc;
+            transition: 0.2s;
+        }
+        .info-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 #00ffcc;
+        }
+        .info-card h3 {
+            margin-top: 0;
+            border-bottom: 2px solid #ff0055;
+            padding-bottom: 0.5rem;
+        }
+        .info-card p {
+            padding: 0;
+        }
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* FAQ */
+        .faq-item {
+            border-bottom: 2px dotted #333;
+            padding: 1.5rem 0;
+        }
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #ffcc00;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            margin-top: 1rem;
+            color: #b0b0b0;
+            display: none;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        /* CONTACT */
+        .contact-block {
+            background: #0d0d0d;
+            padding: 2rem;
+            border: 4px dashed #00ffcc;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .tel-link {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ff0055;
+            text-decoration: none;
+            display: inline-block;
+            padding: 1rem 2rem;
+            border: 4px solid #ff0055;
+            background: #1a1a1a;
+            transition: 0.2s;
+        }
+        .tel-link:hover {
+            background: #ff0055;
+            color: #0a0a0a;
+            border-color: #00ffcc;
+        }
+        /* FOOTER */
+        footer {
+            background: #111;
+            border-top: 4px solid #ff0055;
+            padding: 2rem 0;
+            text-align: center;
+            color: #666;
+        }
+        footer p {
+            padding: 0;
+            font-size: 0.9rem;
+        }
+        /* UTILITY */
+        .text-center {
+            text-align: center;
+        }
+        .mt-4 {
+            margin-top: 4rem;
+        }
+        .mb-4 {
+            margin-bottom: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="logo"><a href="/">✦ NEON VOID</a></div>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="main-nav">
+                <a href="/">홈</a>
+                <a href="/info" class="active">정보</a>
+                <a href="/menu">메뉴</a>
+                <a href="/contact">연락처</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- HERO -->
+        <section class="mb-4">
+            <h1>정보: 왜 규칙을 부수는가</h1>
+            <p class="accent-text">서버 웜업 ≠ 지루한 준비. 이것은 선언이다.</p>
+            <p>강남 셔츠룸과 마포 서버 웜업. 겉보기엔 전혀 다른 세상. 하지만 우리는 그 간극을 찢는다. 당신이 아는 '정보'는 가짜다. 진짜는 여기, 네온 보이드에 있다.</p>
+        </section>
+
+        <!-- DETAIL GRID -->
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>✔︎ 서버 웜업의 본질</h3>
+                <p>우리는 서버를 데우지 않는다. 서버가 우리를 데운다. 마포의 지하, 강남의 지붕. 그 어디든. 준비는 없다. 오직 퍼포먼스만 존재한다. 다른 웜업은 잊어라. 이건 전쟁이다.</p>
+            </div>
+            <div class="info-card">
+                <h3>✔︎ 강남 셔츠룸 코드</h3>
+                <p>셔츠룸은 연극이다. 우리는 무대를 뒤집는다. 셔츠 한 장, 넥타이 하나. 모든 디테일이 신호다. 우리의 셔츠룸은 규칙이 없다. 대신 원칙이 있다. "더럽게, 더 강하게."</p>
+            </div>
+            <div class="info-card">
+                <h3>✔︎ 마포 vs 강남</h3>
+                <p>마포는 거친 도시의 심장. 강남은 반짝이는 껍데기. 우리는 둘 다 삼킨다. 당신이 기대하는 정보 페이지의 착한 말투? 없다. 여기는 사실과 충격만 있다.</p>
+            </div>
+            <div class="info-card">
+                <h3>✔︎ 전화 한 통이면 끝</h3>
+                <p>010-6279-0862. 이 번호를 외워라. 예약도, 질문도, 도발도. 모든 것은 이 선을 통해 흐른다. 우리는 채팅앱을 쓰지 않는다. 목소리의 떨림, 말투의 거침. 그게 전부다.</p>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <section class="mt-4">
+            <h2>자주 묻는 질문 (하지만 너가 듣기 싫은 답변)</h2>
+
+            <div class="faq-item active">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    Q: 서버 웜업이 뭐야? <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A: 지루한 IT 용어 아니다. 서버를 깨우고, 시스템을 흔들고, 네트워크를 폭발시키는 퍼포먼스. 강남 셔츠룸과 합쳐지면 완전히 새로운 장르가 탄생한다. 알고 싶으면 직접 와서 봐라.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    Q: 강남 셔츠룸이랑 무슨 상관인데? <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A: 모든 상관이 있다. 우리는 셔츠룸의 관습을 해킹한다. 넥타이 대신 비트, 와인 대신 피드백. 전통적인 셔츠룸 경험을 서버 속도로 업그레이드했다. 이해 안 가도 좋다. 느끼면 된다.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    Q: 위치가 어디야? 마포? 강남? <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A: 정확한 주소는 전화로만 알려준다. 지도에 찍히면 재미없잖아? 마포와 강남을 오간다. 오늘은 마포 지하 벙커, 내일은 강남 펜트하우스. 공간 자체가 무대다.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    Q: 예약이 필요해? <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A: 필요하다. 하지만 우리의 "예약"은 다르다. 전화로 "지금 갈게" 한마디면 끝. 취소 규정? 노쇼하면 블랙리스트. 진짜 원하는 사람만 온다.</p>
+</body>
+</html>

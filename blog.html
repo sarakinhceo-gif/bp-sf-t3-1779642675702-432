@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>블로그 – 강남 셔츠룸 마포 서버 웜업</title>
+  <meta name="description" content="마포 No.1 서버 웜업 & 강남 셔츠룸 컨셉. 전화 010-6279-0862. 하드코어한 텍스처, 거친 미학. 규칙을 깨는 경험. 블로그에서 본질을 파헤친다.">
+  <meta name="keywords" content="강남 셔츠룸, 마포 서버 웜업, 서버 웜업, 셔츠룸, 강남, 마포, 블로그, 퍼포먼스, 웜업, brutalism, neon-void">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-neon-void">
+  <link rel="canonical" href="https://sf-t3-1779642675702-432.pages.dev/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="블로그 | 강남 셔츠룸 마포 서버 웜업">
+  <meta property="og:description" content="네온 보이드. 규칙을 부수는 서버 웜업. 강남 셔츠룸에서 태어난 반항의 코드. 지금 블로그에서 공개한다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://sf-t3-1779642675702-432.pages.dev/">
+  <style>
+    /* RESET & BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+      background: #0b0b0b;
+    }
+    body {
+      font-family: 'Courier New', Courier, 'IBM Plex Mono', monospace;
+      background: #0b0b0b;
+      color: #e0e0e0;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 2px solid #ff0055;
+      transition: all 0.2s;
+    }
+    a:hover {
+      color: #ff0055;
+      border-bottom-color: #e0e0e0;
+    }
+
+    /* TYPOGRAPHY – oversized, raw */
+    h1 {
+      font-size: clamp(2.8rem, 12vw, 6rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+      line-height: 0.9;
+      color: #ff0055;
+      text-shadow: 4px 4px 0 #1a1a1a;
+      word-break: break-word;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 8vw, 4rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: #ff0055;
+      border-left: 6px solid #ff0055;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      font-size: clamp(1.2rem, 5vw, 2.2rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: #ff8800;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+      max-width: 70ch;
+    }
+    .accent-text {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ff0055;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border: 2px solid #ff0055;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      margin: 2rem 0;
+    }
+
+    /* LAYOUT – full bleed, asymmetric, high gaps */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.5rem 1rem;
+        gap: 2.5rem;
+      }
+    }
+
+    /* HEADER */
+    header {
+      padding: 1.5rem 2rem;
+      background: #111;
+      border-bottom: 3px solid #ff0055;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #ff0055;
+      letter-spacing: -0.03em;
+    }
+    header nav {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    header nav a {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 0;
+    }
+    header nav a:hover {
+      border-bottom: 2px solid #ff0055;
+    }
+
+    /* HAMBURGER MENU (mobile) */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      background: none;
+      border: none;
+      padding: 0.5rem;
+    }
+    .hamburger span {
+      width: 28px;
+      height: 3px;
+      background: #ff0055;
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+      header nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+        background: #111;
+      }
+      header nav.active {
+        display: flex;
+      }
+    }
+
+    /* CARDS (reused for blog post) */
+    .card {
+      background: #1a1a1a;
+      border: 2px solid #2a2a2a;
+      padding: 2rem 2.5rem;
+      box-shadow: 6px 6px 0 #0a0a0a;
+      transition: all 0.3s;
+    }
+    .card:hover {
+      border-color: #ff0055;
+      box-shadow: 8px 8px 0 #ff0055;
+    }
+    .card h2 {
+      border-left-color: #ff8800;
+    }
+    .card p {
+      font-size: 1.05rem;
+    }
+    .card .meta {
+      font-size: 0.8rem;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 1.5rem;
+      border-top: 1px solid #333;
+      padding-top: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      border-top: 3px solid #ff0055;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    footer a {
+      color: #ff0055;
+      border-bottom: 1px solid #ff0055;
+    }
+    footer a:hover {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">강남 셔츠룸 | 마포 서버 웜업</div>
+  <button class="hamburger" aria-label="메뉴" onclick="this.nextElementSibling.classList.toggle('active')">
+    <span></span><span></span><span></span>
+  </button>
+  <nav>
+    <a href="/">홈</a>
+    <a href="/intro">소개</a>
+    <a href="/gallery">갤러리</a>
+    <a href="/blog" style="border-bottom: 2px solid #ff0055;">블로그</a>
+    <a href="/contact">연락</a>
+  </nav>
+</header>
+
+<main class="container">
+  <article class="card">
+    <h2>서버 웜업의 본질: 규칙을 깨는 생존 전략</h2>
+    <p>강남 셔츠룸에서 시작된 이 반항은 단순한 퍼포먼스가 아니다. 마포 서버 웜업은 그 DNA를 그대로 이어받았다. 네온 보이드 아래에서 우리는 질문한다. 왜 따라야 하는가? 왜 규칙이 존재하는가?</p>
+
+    <p>지금 당신이 마주하는 이 공간은 거친 텍스처와 불완전한 리듬으로 구성된다. 하드코어한 미학은 편안함을 거부한다. 서버 웜업의 진짜 의미는 몸과 마음을 극한으로 밀어붙이는 것, 그리고 그 과정에서 발견하는 자유다.</p>
+
+    <h3>강남 셔츠룸 코드</h3>
+    <p>셔츠룸은 단순한 장소가 아니다. 그것은 해방의 의식이다. 넥타이를 풀고 셔츠를 벗는 순간, 당신은 사회적 껍질을 깬다. 서버 웜업도 같다. 웜업은 준비가 아니라 파괴다. 기존의 워밍업 루틴을 태워버려라. 여기서는 오직 본능만이 기준이다.</p>
+
+    <p>우리는 강남 셔츠룸의 정신을 마포로 가져왔다. 서버는 차갑고, 네온은 뜨겁다. 그 사이에서 당신은 자신을 발견할 것이다. 규칙을 부수는 경험. 그것이 우리가 제공하는 유일한 서비스다.</p>
+
+    <p>지금 전화하라. <a href="tel:01062790862">010-6279-0862</a>. 네온 보이드가 당신을 기다린다.</p>
+
+    <div class="meta">2025.03.26 | 작성자: 서버 웜업 크루</div>
+  </article>
+</main>
+
+<footer>
+  <p>© 2025 강남 셔츠룸 · 마포 서버 웜업 | <a href="tel:01062790862">010-6279-0862</a></p>
+  <p style="margin-top:0.5rem; font-size:0.75rem;">브루탈리즘 아방가르드 · 네온 보이드 · 규칙은 없다</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "강남 셔츠룸 마포 서버 웜업",
+  "description": "마포 No.1 서버 웜업 & 강남 셔츠룸 컨셉. 하드코어한 퍼포먼스, 거친 미학.",
+  "telephone": "010-6279-0862",
+  "url": "https://sf-t3-1779642675702-432.pages.dev/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "서울",
+    "addressRegion": "마포"
+  }
+}
+</script>
+
+<script>
+// 모바일 햄버거 메뉴 토글 (간단 버전)
+document.querySelectorAll('.hamburger').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    this
+</body>
+</html>
