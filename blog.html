@@ -1,240 +1,238 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>블로그 – 강남 셔츠룸 마포 서버 웜업</title>
-  <meta name="description" content="마포 No.1 서버 웜업 & 강남 셔츠룸 컨셉. 전화 010-6279-0862. 하드코어한 텍스처, 거친 미학. 규칙을 깨는 경험. 블로그에서 본질을 파헤친다.">
-  <meta name="keywords" content="강남 셔츠룸, 마포 서버 웜업, 서버 웜업, 셔츠룸, 강남, 마포, 블로그, 퍼포먼스, 웜업, brutalism, neon-void">
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-neon-void">
-  <link rel="canonical" href="https://sf-t3-1779642675702-432.maphoshirts.today/blog.html">
-  <!-- Open Graph -->
-  <meta property="og:title" content="블로그 – 강남 셔츠룸 마포 서버 웜업">
-  <meta property="og:description" content="마포 No.1 서버 웜업 &amp; 강남 셔츠룸 컨셉. 전화 010-6279-0862. 하드코어한 텍스처, 거친 미학. 규칙을 깨는 경험. 블로그에서 본질을 파헤친다.">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://sf-t3-1779642675702-432.maphoshirts.today/blog.html">
-  <style>
-    /* RESET & BASE */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-      background: #0b0b0b;
-    }
-    body {
-      font-family: 'Courier New', Courier, 'IBM Plex Mono', monospace;
-      background: #0b0b0b;
-      color: #e0e0e0;
-      line-height: 1.4;
-      letter-spacing: 0.02em;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-      border-bottom: 2px solid #ff0055;
-      transition: all 0.2s;
-    }
-    a:hover {
-      color: #ff0055;
-      border-bottom-color: #e0e0e0;
-    }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>블로그 – 강남 셔츠룸 마포 서버 웜업</title>
+ <meta name="description" content="마포 No.1 서버 웜업 & 강남 셔츠룸 컨셉. 하드코어한 텍스처, 거친 미학. 규칙을 깨는 경험. 블로그에서 본질을 파헤친다.">
+ <meta name="keywords" content="강남 셔츠룸, 마포 서버 웜업, 서버 웜업, 셔츠룸, 강남, 마포, 블로그, 퍼포먼스, 웜업, brutalism, neon-void">
+ <link rel="canonical" href="https://sf-t3-1779642675702-432.maphoshirts.today/blog.html">
+ <!-- Open Graph -->
+ <meta property="og:title" content="블로그 – 강남 셔츠룸 마포 서버 웜업">
+ <meta property="og:description" content="마포 No.1 서버 웜업 &amp; 강남 셔츠룸 컨셉. 하드코어한 텍스처, 거친 미학. 규칙을 깨는 경험. 블로그에서 본질을 파헤친다.">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://sf-t3-1779642675702-432.maphoshirts.today/blog.html">
+ <style>
+ /* RESET & BASE */
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ background: #0b0b0b;
+ }
+ body {
+ font-family: 'Courier New', Courier, 'IBM Plex Mono', monospace;
+ background: #0b0b0b;
+ color: #e0e0e0;
+ line-height: 1.4;
+ letter-spacing: 0.02em;
+ }
+ a {
+ color: inherit;
+ text-decoration: none;
+ border-bottom: 2px solid #ff0055;
+ transition: all 0.2s;
+ }
+ a:hover {
+ color: #ff0055;
+ border-bottom-color: #e0e0e0;
+ }
 
-    /* TYPOGRAPHY – oversized, raw */
-    h1 {
-      font-size: clamp(2.8rem, 12vw, 6rem);
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: -0.04em;
-      line-height: 0.9;
-      color: #ff0055;
-      text-shadow: 4px 4px 0 #1a1a1a;
-      word-break: break-word;
-    }
-    h2 {
-      font-size: clamp(1.8rem, 8vw, 4rem);
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: -0.02em;
-      line-height: 1;
-      color: #ff0055;
-      border-left: 6px solid #ff0055;
-      padding-left: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    h3 {
-      font-size: clamp(1.2rem, 5vw, 2.2rem);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-      color: #ff8800;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 1.2rem;
-      max-width: 70ch;
-    }
-    .accent-text {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #ff0055;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      border: 2px solid #ff0055;
-      padding: 0.5rem 1rem;
-      display: inline-block;
-      margin: 2rem 0;
-    }
+ /* TYPOGRAPHY – oversized, raw */
+ h1 {
+ font-size: clamp(2.8rem, 12vw, 6rem);
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -0.04em;
+ line-height: 0.9;
+ color: #ff0055;
+ text-shadow: 4px 4px 0 #1a1a1a;
+ word-break: break-word;
+ }
+ h2 {
+ font-size: clamp(1.8rem, 8vw, 4rem);
+ font-weight: 800;
+ text-transform: uppercase;
+ letter-spacing: -0.02em;
+ line-height: 1;
+ color: #ff0055;
+ border-left: 6px solid #ff0055;
+ padding-left: 1rem;
+ margin-bottom: 1.5rem;
+ }
+ h3 {
+ font-size: clamp(1.2rem, 5vw, 2.2rem);
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.02em;
+ color: #ff8800;
+ margin-bottom: 1rem;
+ }
+ p {
+ font-size: 1.1rem;
+ margin-bottom: 1.2rem;
+ max-width: 70ch;
+ }
+ .accent-text {
+ font-size: 1.4rem;
+ font-weight: 700;
+ color: #ff0055;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ border: 2px solid #ff0055;
+ padding: 0.5rem 1rem;
+ display: inline-block;
+ margin: 2rem 0;
+ }
 
-    /* LAYOUT – full bleed, asymmetric, high gaps */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 4rem;
-    }
-    @media (max-width: 768px) {
-      .container {
-        padding: 1.5rem 1rem;
-        gap: 2.5rem;
-      }
-    }
+ /* LAYOUT – full bleed, asymmetric, high gaps */
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 2rem 1.5rem;
+ display: flex;
+ flex-direction: column;
+ gap: 4rem;
+ }
+ @media (max-width: 768px) {
+ .container {
+ padding: 1.5rem 1rem;
+ gap: 2.5rem;
+ }
+ }
 
-    /* HEADER */
-    header {
-      padding: 1.5rem 2rem;
-      background: #111;
-      border-bottom: 3px solid #ff0055;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    header .logo {
-      font-size: 1.8rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      color: #ff0055;
-      letter-spacing: -0.03em;
-    }
-    header nav {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
-    header nav a {
-      font-size: 0.95rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      border-bottom: 0;
-    }
-    header nav a:hover {
-      border-bottom: 2px solid #ff0055;
-    }
+ /* HEADER */
+ header {
+ padding: 1.5rem 2rem;
+ background: #111;
+ border-bottom: 3px solid #ff0055;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 1rem;
+ }
+ header .logo {
+ font-size: 1.8rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ color: #ff0055;
+ letter-spacing: -0.03em;
+ }
+ header nav {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+ header nav a {
+ font-size: 0.95rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ border-bottom: 0;
+ }
+ header nav a:hover {
+ border-bottom: 2px solid #ff0055;
+ }
 
-    /* HAMBURGER MENU (mobile) */
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-      background: none;
-      border: none;
-      padding: 0.5rem;
-    }
-    .hamburger span {
-      width: 28px;
-      height: 3px;
-      background: #ff0055;
-      display: block;
-    }
-    @media (max-width: 768px) {
-      .hamburger {
-        display: flex;
-      }
-      header nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem 0;
-        background: #111;
-      }
-      header nav.active {
-        display: flex;
-      }
-    }
+ /* HAMBURGER MENU (mobile) */
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ background: none;
+ border: none;
+ padding: 0.5rem;
+ }
+ .hamburger span {
+ width: 28px;
+ height: 3px;
+ background: #ff0055;
+ display: block;
+ }
+ @media (max-width: 768px) {
+ .hamburger {
+ display: flex;
+ }
+ header nav {
+ display: none;
+ width: 100%;
+ flex-direction: column;
+ gap: 1rem;
+ padding: 1rem 0;
+ background: #111;
+ }
+ header nav.active {
+ display: flex;
+ }
+ }
 
-    /* CARDS (reused for blog post) */
-    .card {
-      background: #1a1a1a;
-      border: 2px solid #2a2a2a;
-      padding: 2rem 2.5rem;
-      box-shadow: 6px 6px 0 #0a0a0a;
-      transition: all 0.3s;
-    }
-    .card:hover {
-      border-color: #ff0055;
-      box-shadow: 8px 8px 0 #ff0055;
-    }
-    .card h2 {
-      border-left-color: #ff8800;
-    }
-    .card p {
-      font-size: 1.05rem;
-    }
-    .card .meta {
-      font-size: 0.8rem;
-      color: #666;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-top: 1.5rem;
-      border-top: 1px solid #333;
-      padding-top: 1rem;
-    }
+ /* CARDS (reused for blog post) */
+ .card {
+ background: #1a1a1a;
+ border: 2px solid #2a2a2a;
+ padding: 2rem 2.5rem;
+ box-shadow: 6px 6px 0 #0a0a0a;
+ transition: all 0.3s;
+ }
+ .card:hover {
+ border-color: #ff0055;
+ box-shadow: 8px 8px 0 #ff0055;
+ }
+ .card h2 {
+ border-left-color: #ff8800;
+ }
+ .card p {
+ font-size: 1.05rem;
+ }
+ .card .meta {
+ font-size: 0.8rem;
+ color: #666;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ margin-top: 1.5rem;
+ border-top: 1px solid #333;
+ padding-top: 1rem;
+ }
 
-    /* FOOTER */
-    footer {
-      background: #111;
-      border-top: 3px solid #ff0055;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.85rem;
-      color: #888;
-    }
-    footer a {
-      color: #ff0055;
-      border-bottom: 1px solid #ff0055;
-    }
-    footer a:hover {
-      color: #fff;
-      border-bottom-color: #fff;
-    }
-  </style>
+ /* FOOTER */
+ footer {
+ background: #111;
+ border-top: 3px solid #ff0055;
+ padding: 2rem;
+ text-align: center;
+ font-size: 0.85rem;
+ color: #888;
+ }
+ footer a {
+ color: #ff0055;
+ border-bottom: 1px solid #ff0055;
+ }
+ footer a:hover {
+ color: #fff;
+ border-bottom-color: #fff;
+ }
+ </style>
   <meta name="twitter:card" content="summary">
 </head>
 <body>
 
 <header>
-  <div class="logo">강남 셔츠룸 | 마포 서버 웜업</div>
-  <button class="hamburger" aria-label="메뉴" onclick="this.nextElementSibling.classList.toggle('active')">
-    <span></span><span></span><span></span>
-  </button>
-  <nav>
-    <a href="/">홈</a>
-    <a href="/intro">소개</a>
-    <a href="/gallery">갤러리</a>
-    <a href="/blog" style="border-bottom: 2px solid #ff0055;">블로그</a>
-    <a href="/contact">연락</a>
-  </nav>
+ <div class="logo">강남 셔츠룸 | 마포 서버 웜업</div>
+ <button class="hamburger" aria-label="메뉴" onclick="this.nextElementSibling.classList.toggle('active')">
+ 
+ </button>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/intro">소개</a>
+ <a href="/gallery">갤러리</a>
+ <a href="/blog" style="border-bottom: 2px solid #ff0055;">블로그</a>
+ <a href="/contact">연락</a>
+ </nav>
 </header>
 
 <main class="container">
@@ -301,7 +299,7 @@
 <p>강남 셔츠룸을 처음 이용하는 경우, 운영시간과 인원 조건을 먼저 확인한 뒤 예약 여부를 결정하는 순서로 접근하면 헷갈림 없이 준비할 수 있습니다. 다음 글에서는 다른 지역의 이용 정보도 함께 다룰 예정입니다.</p>
 </article>
 
-<p class="accent-text">문의: <a href="tel:01062790862">01062790862</a></p>
+<p class="accent-text">문의: </p>
 </main>
 
 
